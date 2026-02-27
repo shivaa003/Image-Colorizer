@@ -26,7 +26,7 @@ jobs:
 
       - name: Run test script if exists
         run: |
-          if [ -f demo_release.py ]; then python test.py; else echo "No tests found"; fi
+          if [ -f demo_release.py ]; then python demo_release.py; else echo "No tests found"; fi
 
       - name: Lint using flake8 (optional)
         run: |
